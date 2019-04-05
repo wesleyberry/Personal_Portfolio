@@ -71,7 +71,7 @@ li {
     bottom: 0;
     left:2vw;
     width: 6vw;
-    height: 40vh;
+    height: 50vh;
 }
 .emailCont {
     visibility: hidden;
@@ -318,6 +318,62 @@ a:-webkit-any-link {
     color: rgb(180, 27, 73);
     transition: .4s;
 }
+/* -----------Contact-------- */
+.contactContainer {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.contactDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.collaborate {
+    margin-top: 20vh;
+}
+.hello {
+    position: absolute;
+    margin-top: 40vh !important;
+}
+.helloButton {
+    font-size: 40px;
+}
+/* ----------Footer------- */
+.footer1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    color: rgb(180, 27, 73) !important;
+    text-align: center;
+}
+.footerP,
+.footerP2 {
+    color: rgb(180, 27, 73) !important;
+    margin-top: 4%;
+    font-size: 20px;
+    display: block;
+}
+.footerP2 {
+    letter-spacing: 40px;
+    font-size: 40px;
+}
+.fab.fa-linkedin.foot,
+.fab.fa-github-square.foot{
+    margin-left: 40px;
+    transition: .4s;
+}
+.fab.fa-linkedin.foot:hover, 
+.fab.fa-github-square.foot:hover {
+    color: white;
+    transition: .4s;
+}
 /* .sidenav {
     height: 100%;
     width: 0;
@@ -414,6 +470,14 @@ a:-webkit-any-link {
     .workGifDiv:hover .hiddenGif {
         width: 450px;
         height: 254px;
+    }
+    /* ------------Contact--------- */
+    .hello {
+        position: absolute;
+        margin-top: 40vh !important;
+    }
+    .helloButton {
+        font-size: 50px;
     }
 }
 
@@ -521,7 +585,7 @@ a:-webkit-any-link {
         bottom: 0;
         right:2vw;
         width: auto;
-        height: 40vh;
+        height: 50vh;
         background-color: transparent;
     }
     .emailA {
@@ -545,14 +609,28 @@ a:-webkit-any-link {
     }
     .aboutMeText {
         margin-top: 4px;
+        font-size: 20px;
     }
     .experience {
         margin-top: 30px;
         margin-left: 10%;
         margin-right: 10%;
+        font-size: 20px;
     }
     .aboutMeHeader {
         font-size: 46px;
+    }
+    /* ------------Contact--------- */
+    .hello {
+        position: absolute;
+        margin-top: 40vh !important;
+    }
+    .helloButton {
+        font-size: 50px;
+    }
+    /* ----------Footer------- */
+    .footerP2 {
+        display: none;
     }
 }
 
@@ -646,5 +724,13 @@ a:-webkit-any-link {
     .workGifDiv:hover .hiddenGif {
         width: 500px;
         height: 282px;
+    }
+    /* ------------Contact--------- */
+    .hello {
+        position: absolute;
+        margin-top: 40vh !important;
+    }
+    .helloButton {
+        font-size: 50px;
     }
 } 

@@ -276,6 +276,9 @@ a:-webkit-any-link {
     clear: right;
     justify-content: center;
 }
+.bamazonDiv {
+    background-image: url("../images/manager1.jpg");
+}
 .hiddenLiri {
     transition: .4s;
     background-color: transparent;

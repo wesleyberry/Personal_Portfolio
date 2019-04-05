@@ -175,7 +175,7 @@ a:-webkit-any-link {
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 30%;
+    width: 50%;
 }
 .aboutMeHeader:before {
     right: 0.5em;
@@ -326,8 +326,9 @@ a:-webkit-any-link {
     height: 100vh;
     width: 100%;
     position: relative;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top: 7%;
     margin-right: 0;
     margin-left: 0;
 }
@@ -475,12 +476,25 @@ a:-webkit-any-link {
         height: 254px;
     }
     /* ------------Contact--------- */
+    .contactContainer {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
     .hello {
         position: absolute;
         margin-top: 40vh !important;
     }
     .helloButton {
         font-size: 50px;
+    }
+    /* ----------Footer------- */
+    .footer1 {
+        text-align: center;
+    }
+    .footerP,
+    .footerP2 {
+        margin-top: 2%;
+        font-size: 20px;
     }
 }
 
@@ -634,6 +648,10 @@ a:-webkit-any-link {
     /* ----------Footer------- */
     .footerP2 {
         display: none;
+    }
+    .contactContainer {
+        padding-left: 12%;
+        padding-right: 12%;
     }
 }
 

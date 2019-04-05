@@ -197,7 +197,7 @@ a:-webkit-any-link {
     overflow: auto;
 }
 .workGifDiv {
-    background-image: url("../images/gif.JPG");
+    background-image: url("../images/gif.jpg");
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ a:-webkit-any-link {
     height: 180px;
 }
 .workProjDiv {
-    background-image: url("../images/mix.JPG");
+    background-image: url("../images/mix.jpg");
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -262,7 +262,7 @@ a:-webkit-any-link {
     height: 180px;
 }
 .workLiriDiv {
-    background-image: url("../images/concertThis.JPG");
+    background-image: url("../images/concertThis.jpg");
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;

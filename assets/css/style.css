@@ -296,6 +296,9 @@ a:-webkit-any-link {
     width: 320px;
     height: 180px;
 }
+.workFriendDiv {
+    background-image: url("../images/friendCaptureJPG1.jpg") !important;
+}
 .scroll {
     overflow-y: auto;
 }

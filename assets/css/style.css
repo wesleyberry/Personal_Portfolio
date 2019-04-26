@@ -174,7 +174,7 @@ a:-webkit-any-link {
     overflow: auto;
 }
 .workGifDiv {
-    background-image: url("../images/gigbooklanding.jpg");
+    background-image: url("../images/gigbooklanding.jpg") !important;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -239,7 +239,7 @@ a:-webkit-any-link {
     height: 180px;
 }
 .workLiriDiv {
-    background-image: url("../images/cnn2.jpg");
+    background-image: url("../images/cnn2.jpg") !important;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;

@@ -254,7 +254,7 @@ a:-webkit-any-link {
     justify-content: center;
 }
 .bamazonDiv {
-    background-image: url("../images/manager1cropped.jpg");
+    background-image: url("../images/manager1cropped.jpg") !important;
 }
 .hiddenLiri {
     transition: .4s;

@@ -253,9 +253,6 @@ a:-webkit-any-link {
     clear: right;
     justify-content: center;
 }
-.bamazonDiv {
-    background-image: url("../images/manager1cropped.jpg") !important;
-}
 .hiddenLiri {
     transition: .4s;
     background-color: transparent;
@@ -272,9 +269,6 @@ a:-webkit-any-link {
     visibility: visible;
     width: 320px;
     height: 180px;
-}
-.workFriendDiv {
-    background-image: url("../images/friendCaptureJPG1.jpg") !important;
 }
 .scroll {
     overflow-y: auto;

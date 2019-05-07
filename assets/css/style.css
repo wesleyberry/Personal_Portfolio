@@ -33,7 +33,7 @@ ul {
     list-style-type: square;
 }
 li {
-    color: rgb(126, 126, 126);
+    color: #7e7e7e;
 }
 /* ----------------navbar------------- */
 /* .navbar {
@@ -112,7 +112,7 @@ a:-webkit-any-link {
     transition: .4s;
 }
 .titleButton:hover {
-    background-color: rgb(180, 27, 73) !important;
+    background-color: #b41b49 !important;
     color: white;
     transition: .4s;
     cursor: pointer;
@@ -146,7 +146,7 @@ a:-webkit-any-link {
 }
 .aboutMeHeader:before,
 .aboutMeHeader:after {
-    background-color: rgb(126, 126, 126);
+    background-color: #7e7e7e;
     content: "";
     display: inline-block;
     height: 1px;
@@ -328,7 +328,7 @@ a:-webkit-any-link {
     bottom: 0;
     width: 100%;
     background-color: rgb(17, 17, 17);
-    color: rgb(180, 27, 73) !important;
+    color: #b41b49 !important;
     text-align: center;
 }
 .footerP,

@@ -35,10 +35,6 @@ ul {
 li {
     color: #7e7e7e;
 }
-/* ----------------navbar------------- */
-/* .navbar {
-    display: none;
-} */
 /* --------Outside the containers-------- */
 .social {
     visibility: hidden;
@@ -70,7 +66,7 @@ li {
 }
 .intro {
     position: absolute;
-    width: auto;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -554,7 +550,7 @@ a:-webkit-any-link {
         bottom: 0;
         right:2vw;
         width: auto;
-        height: 50vh;
+        height: 40vh;
         background-color: transparent;
     }
     .emailA {

@@ -295,7 +295,7 @@ a:-webkit-any-link {
 }
 .fab.fa-github:hover,
 .fas.fa-eye:hover {
-    color: #2C3D11;
+    color: #588A0B;
     transition: .4s;
 }
 /* -----------Contact-------- */
@@ -336,7 +336,7 @@ a:-webkit-any-link {
 }
 .footerP,
 .footerP2 {
-    color: #2C3D11 !important;
+    color: #588A0B !important;
     margin-top: 4%;
     font-size: 20px;
     display: block;
@@ -560,7 +560,7 @@ a:-webkit-any-link {
         transition: .4s;
     }
     .emailA:hover {
-        color: #2C3D11 !important;
+        color: #588A0B !important;
         transition: .4s;
         cursor: pointer;
     }

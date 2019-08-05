@@ -1,6 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #2C0E33;
+    min-height: 100%;
+}
+html { 
+    height: 100%;
 }
 .container {
     height: 100vh;
@@ -170,77 +174,6 @@ a:-webkit-any-link {
     width: 100%;
     height: 100vh;
 }
-.workProjDiv {
-    background-image: url("../images/mix.JPG");
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 188px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    display: flex;
-    float: left;
-    clear: left;
-    justify-content: center;
-}
-.hiddenProj {
-    transition: .4s;
-    background-color: transparent;
-    visibility: hidden;
-    z-index:2;
-    position: absolute;
-    width: 0;
-    height: 0;
-    padding: 5% 5% 5% 5%;
-}
-.workProjDiv:hover .hiddenProj {
-    transition: .4s;
-    background-color: rgb(0, 0, 0, .9);
-    visibility: visible;
-    width: 320px;
-    height: 180px;
-}
-.workBookDiv,
-.workLiriDiv {
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 188px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    display: flex;
-    float: right;
-    clear: right;
-    justify-content: center;
-}
-.workLiriDiv {
-    background-image: url("../images/cnn2.jpg") !important;
-}
-.workBookDiv {
-    background-image: url("../images/booksearch.jpg");
-}
-.hiddenLiri {
-    transition: .4s;
-    background-color: transparent;
-    visibility: hidden;
-    z-index:2;
-    position: absolute;
-    width: 0;
-    height: 0;
-    padding: 5% 5% 5% 5%;
-}
-.workBookDiv:hover .hiddenLiri,
-.workLiriDiv:hover .hiddenLiri {
-    transition: .4s;
-    background-color: rgb(0, 0, 0, .9);
-    visibility: visible;
-    width: 320px;
-    height: 180px;
-}
 .rowEmblems {
     display: flex;
     justify-content: center;
@@ -290,7 +223,6 @@ a:-webkit-any-link {
 }
 /* ----------Footer------- */
 .footer1 {
-    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -322,7 +254,34 @@ a:-webkit-any-link {
 }
 /*Extra small devices (phones) */
 @media (min-width: 300px) {
-
+    /* ------------Projects---------- */
+    .container2 {
+        height: auto;
+    }
+    .contactContainer {
+        position: absolute;
+        top: 4000px;
+    }
+    .row {
+        margin-bottom: 8%;
+    }
+    .bookSearchImage,
+    .gigBookImage {
+        height: auto;
+        overflow: hidden;
+    }
+    .textForBook,
+    .textForGig {
+        background-color: #2C3D11;
+        padding-right: 0;
+        padding-left: 0;
+        padding: 2%;
+        border-radius: 0 0 4px 4px;
+    }
+    #myWork > div > div.row > div {
+        width: 92%;
+        left: 4%;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -368,6 +327,23 @@ a:-webkit-any-link {
         font-size: 40px;
     }
     /* ------------Projects---------- */
+    .gigBookImage {
+        height: auto;
+    }
+    .textForBook,
+    .textForGig {
+        padding: 2%;
+        height: auto;
+        border-radius: 4px;
+        border-radius: 0 0 4px 4px;
+    }
+    #myWork > div > div:nth-child(3) > div,
+    #myWork > div > div:nth-child(2) > div,
+    #myWork > div > div:nth-child(1) > div {
+        flex: 0 0 94%;
+        width: 100%;
+        left: 3%;
+    }
     /* ------------Contact--------- */
     .contactContainer {
         padding-left: 8%;
@@ -529,6 +505,26 @@ a:-webkit-any-link {
     .aboutMeHeader {
         font-size: 46px;
     }
+    /* ------------Projects-------- */
+    .gigBookImage {
+        height: auto;
+    }
+    .bookSearchImage {
+        height: auto;
+    }
+    .textForBook,
+    .textForGig {
+        background-color: #2C3D11;
+        padding: 1%;
+        height: auto;
+        border-radius: 0 0 4px 4px;
+    }
+    #myWork > div > div:nth-child(3) > div,
+    #myWork > div > div:nth-child(2) > div,
+    #myWork > div > div:nth-child(1) > div {
+        flex: 0 0 95.5%;
+        left: 2.25%;
+    }
     /* ------------Contact--------- */
     .hello {
         position: absolute;
@@ -572,15 +568,23 @@ a:-webkit-any-link {
         margin-right: 20%;
     }
     /* -------Projects----------- */
+    .bookSearchImage,
+    .gigBookImage {
+        height: auto;
+        max-height: 300px;
+    }
+    .textForBook,
     .textForGig {
-        position: absolute;
         background-color: #2C3D11;
         padding: 1%;
-        width: 300px;
-        height: 45vh;
-        right: 12vw;
+        height: auto;
         border-radius: 4px;
-        top: 1755px;
+    }
+    #myWork > div > div:nth-child(3) > div,
+    #myWork > div > div:nth-child(2) > div,
+    #myWork > div > div:nth-child(1) > div {
+        flex: 0 0 100%;
+        left: 0;
     }
 }
 
@@ -616,14 +620,15 @@ a:-webkit-any-link {
         font-size: 50px;
     }
     /* ------------Projects---------- */
+    .bookSearchImage,
     .gigBookImage {
-        width: 70%;
         height: auto;
+        max-height: none;
     }
+    .textForBook,
     .textForGig {
         background-color: #2C3D11;
         padding: 1%;
-        width: 30%;
         height: auto;
         border-radius: 4px;
     }

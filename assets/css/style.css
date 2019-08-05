@@ -124,6 +124,7 @@ a:-webkit-any-link {
     transform: rotate(270deg);
 }
 /* -------------About Me-------- */
+.container3,
 .container2 {
     margin-right: 0;
     margin-left: 0;
@@ -258,9 +259,8 @@ a:-webkit-any-link {
     .container2 {
         height: auto;
     }
-    .contactContainer {
-        position: absolute;
-        top: 4000px;
+    .container3 {
+        min-height: 1800px;
     }
     .row {
         margin-bottom: 8%;
@@ -281,6 +281,14 @@ a:-webkit-any-link {
     #myWork > div > div.row > div {
         width: 92%;
         left: 4%;
+    }
+    .contactContainer {
+        position: static;
+    }
+}
+@media (min-width: 460px) {
+    .container3 {
+        min-height: 2000px;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -310,9 +318,13 @@ a:-webkit-any-link {
         padding: 1% 2% 1% 2%;
     }
     /* -----------About Me-------- */
+    .container3,
     .container2 {
         padding-left: 8%;
         padding-right: 8%;
+    }
+    .container3 {
+        min-height: 2100px;
     }
     .forProfileImg {
         width: 60%;
@@ -365,7 +377,11 @@ a:-webkit-any-link {
         font-size: 20px;
     }
 }
-
+@media (min-width: 725px) {
+    .container3 {
+        min-height: 2200px;
+    }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container1 {
@@ -485,6 +501,7 @@ a:-webkit-any-link {
         cursor: pointer;
     }
     /* -----------About Me-------- */
+    .container3,
     .container2 {
         padding-left: 12%;
         padding-right: 12%;
@@ -542,6 +559,11 @@ a:-webkit-any-link {
         padding-right: 12%;
     }
 }
+@media (min-width: 830px) {
+    .container3 {
+        min-height: 2300px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -552,9 +574,13 @@ a:-webkit-any-link {
         padding-top: 15%;
     }
     /* -----------About Me-------- */
+    .container3,
     .container2 {
         padding-left: 12%;
         padding-right: 12%;
+    }
+    .container3 {
+        min-height: 1600px;
     }
     .forProfileImg {
         width: 240px;
@@ -585,6 +611,10 @@ a:-webkit-any-link {
     #myWork > div > div:nth-child(1) > div {
         flex: 0 0 100%;
         left: 0;
+    }
+    /* ---------Contact-------------- */
+    .contactContainer {
+
     }
 }
 
@@ -636,6 +666,9 @@ a:-webkit-any-link {
     .workLiriDiv {
         margin-right: 7vw;
     }
+    .container3 {
+        min-height: 1800px;
+    }
     /* ------------Contact--------- */
     .hello {
         position: absolute;
@@ -645,3 +678,18 @@ a:-webkit-any-link {
         font-size: 50px;
     }
 } 
+@media (min-width: 1500px) {
+    .container3 {
+        min-height: 2000px;
+    }
+}
+@media (min-width: 1700px) {
+    .container3 {
+        min-height: 2300px;
+    }
+}
+@media (min-width: 2000px) {
+    .container3 {
+        min-height: 2500px;
+    }
+}

@@ -1,6 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #2C0E33;
+    min-height: 100%;
+}
+html { 
+    height: 100%;
 }
 .container {
     height: 100vh;
@@ -120,6 +124,7 @@ a:-webkit-any-link {
     transform: rotate(270deg);
 }
 /* -------------About Me-------- */
+.container3,
 .container2 {
     margin-right: 0;
     margin-left: 0;
@@ -167,114 +172,8 @@ a:-webkit-any-link {
 }
 /* ------------Projects-------- */
 .projects {
-    overflow: auto;
-}
-.workGifDiv {
-    background-image: url("../images/finalLanding.jpg") !important;
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 188px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    display: flex;
-    float: left;
-    clear: left;
-    justify-content: center;
-    overflow: none;
-}
-.hiddenGif {
-    transition: .4s;
-    z-index:2;
-    position: absolute;
-    background-color: transparent;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    padding: 5% 5% 5% 5%;
-}
-.workGifDiv:hover .hiddenGif {
-    transition: .4s;
-    background-color: rgb(0, 0, 0, .9);
-    visibility: visible;
-    width: 330px;
-    height: 180px;
-}
-.workProjDiv {
-    background-image: url("../images/mix.JPG");
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 188px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    display: flex;
-    float: left;
-    clear: left;
-    justify-content: center;
-}
-.hiddenProj {
-    transition: .4s;
-    background-color: transparent;
-    visibility: hidden;
-    z-index:2;
-    position: absolute;
-    width: 0;
-    height: 0;
-    padding: 5% 5% 5% 5%;
-}
-.workProjDiv:hover .hiddenProj {
-    transition: .4s;
-    background-color: rgb(0, 0, 0, .9);
-    visibility: visible;
-    width: 320px;
-    height: 180px;
-}
-.workBookDiv,
-.workLiriDiv {
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 188px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    display: flex;
-    float: right;
-    clear: right;
-    justify-content: center;
-}
-.workLiriDiv {
-    background-image: url("../images/cnn2.jpg") !important;
-}
-.workBookDiv {
-    background-image: url("../images/booksearch.jpg");
-}
-.hiddenLiri {
-    transition: .4s;
-    background-color: transparent;
-    visibility: hidden;
-    z-index:2;
-    position: absolute;
-    width: 0;
-    height: 0;
-    padding: 5% 5% 5% 5%;
-}
-.workBookDiv:hover .hiddenLiri,
-.workLiriDiv:hover .hiddenLiri {
-    transition: .4s;
-    background-color: rgb(0, 0, 0, .9);
-    visibility: visible;
-    width: 320px;
-    height: 180px;
-}
-.scroll {
-    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
 }
 .rowEmblems {
     display: flex;
@@ -302,7 +201,6 @@ a:-webkit-any-link {
 .contactContainer {
     height: 100vh;
     width: 100%;
-    position: relative;
     padding-right: 7%;
     padding-left: 7%;
     padding-top: 7%;
@@ -326,18 +224,18 @@ a:-webkit-any-link {
 }
 /* ----------Footer------- */
 .footer1 {
-    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(17, 17, 17);
     color: #2C3D11 !important;
     text-align: center;
+    padding: 20px;
 }
 .footerP,
 .footerP2 {
     color: #588A0B !important;
-    margin-top: 4%;
+    margin-bottom: 0;
     font-size: 20px;
     display: block;
 }
@@ -357,7 +255,41 @@ a:-webkit-any-link {
 }
 /*Extra small devices (phones) */
 @media (min-width: 300px) {
-
+    /* ------------Projects---------- */
+    .container2 {
+        height: auto;
+    }
+    .container3 {
+        min-height: 1800px;
+    }
+    .row {
+        margin-bottom: 8%;
+    }
+    .bookSearchImage,
+    .gigBookImage {
+        height: auto;
+        overflow: hidden;
+    }
+    .textForBook,
+    .textForGig {
+        background-color: #2C3D11;
+        padding-right: 0;
+        padding-left: 0;
+        padding: 2%;
+        border-radius: 0 0 4px 4px;
+    }
+    #myWork > div > div.row > div {
+        width: 92%;
+        left: 4%;
+    }
+    .contactContainer {
+        position: static;
+    }
+}
+@media (min-width: 460px) {
+    .container3 {
+        min-height: 2000px;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -386,9 +318,13 @@ a:-webkit-any-link {
         padding: 1% 2% 1% 2%;
     }
     /* -----------About Me-------- */
+    .container3,
     .container2 {
         padding-left: 8%;
         padding-right: 8%;
+    }
+    .container3 {
+        min-height: 2100px;
     }
     .forProfileImg {
         width: 60%;
@@ -403,25 +339,22 @@ a:-webkit-any-link {
         font-size: 40px;
     }
     /* ------------Projects---------- */
-    .workBookDiv,
-    .workProjDiv,
-    .workLiriDiv,
-    .workGifDiv {
-        width: 450px;
-        height: 300px;
+    .gigBookImage {
+        height: auto;
     }
-    .hiddenProj,
-    .hiddenLiri,
-    .hiddenGif {
-        width: 0;
-        height: 0;
+    .textForBook,
+    .textForGig {
+        padding: 2%;
+        height: auto;
+        border-radius: 4px;
+        border-radius: 0 0 4px 4px;
     }
-    .workBookDiv:hover .hiddenLiri,
-    .workLiriDiv:hover .hiddenLiri,
-    .workProjDiv:hover .hiddenProj,
-    .workGifDiv:hover .hiddenGif {
-        width: 450px;
-        height: 254px;
+    #myWork > div > div:nth-child(3) > div,
+    #myWork > div > div:nth-child(2) > div,
+    #myWork > div > div:nth-child(1) > div {
+        flex: 0 0 94%;
+        width: 100%;
+        left: 3%;
     }
     /* ------------Contact--------- */
     .contactContainer {
@@ -441,11 +374,14 @@ a:-webkit-any-link {
     }
     .footerP,
     .footerP2 {
-        margin-top: 2%;
         font-size: 20px;
     }
 }
-
+@media (min-width: 725px) {
+    .container3 {
+        min-height: 2200px;
+    }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container1 {
@@ -565,6 +501,7 @@ a:-webkit-any-link {
         cursor: pointer;
     }
     /* -----------About Me-------- */
+    .container3,
     .container2 {
         padding-left: 12%;
         padding-right: 12%;
@@ -585,6 +522,26 @@ a:-webkit-any-link {
     .aboutMeHeader {
         font-size: 46px;
     }
+    /* ------------Projects-------- */
+    .gigBookImage {
+        height: auto;
+    }
+    .bookSearchImage {
+        height: auto;
+    }
+    .textForBook,
+    .textForGig {
+        background-color: #2C3D11;
+        padding: 1%;
+        height: auto;
+        border-radius: 0 0 4px 4px;
+    }
+    #myWork > div > div:nth-child(3) > div,
+    #myWork > div > div:nth-child(2) > div,
+    #myWork > div > div:nth-child(1) > div {
+        flex: 0 0 95.5%;
+        left: 2.25%;
+    }
     /* ------------Contact--------- */
     .hello {
         position: absolute;
@@ -602,6 +559,11 @@ a:-webkit-any-link {
         padding-right: 12%;
     }
 }
+@media (min-width: 830px) {
+    .container3 {
+        min-height: 2300px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -612,9 +574,13 @@ a:-webkit-any-link {
         padding-top: 15%;
     }
     /* -----------About Me-------- */
+    .container3,
     .container2 {
         padding-left: 12%;
         padding-right: 12%;
+    }
+    .container3 {
+        min-height: 1600px;
     }
     .forProfileImg {
         width: 240px;
@@ -626,6 +592,29 @@ a:-webkit-any-link {
         margin-top: 40px;
         margin-left: 20%;
         margin-right: 20%;
+    }
+    /* -------Projects----------- */
+    .bookSearchImage,
+    .gigBookImage {
+        height: auto;
+        max-height: 300px;
+    }
+    .textForBook,
+    .textForGig {
+        background-color: #2C3D11;
+        padding: 1%;
+        height: auto;
+        border-radius: 4px;
+    }
+    #myWork > div > div:nth-child(3) > div,
+    #myWork > div > div:nth-child(2) > div,
+    #myWork > div > div:nth-child(1) > div {
+        flex: 0 0 100%;
+        left: 0;
+    }
+    /* ---------Contact-------------- */
+    .contactContainer {
+
     }
 }
 
@@ -661,35 +650,24 @@ a:-webkit-any-link {
         font-size: 50px;
     }
     /* ------------Projects---------- */
-    .workBookDiv,
-    .workProjDiv,
-    .workLiriDiv,
-    .workGifDiv {
-        width: 500px;
-        height: 300px;
-        margin-top: 24px;
-        clear: both;
+    .bookSearchImage,
+    .gigBookImage {
+        height: auto;
+        max-height: none;
     }
-    .workProjDiv,
-    .workGifDiv {
-        margin-left: 7vw;
+    .textForBook,
+    .textForGig {
+        background-color: #2C3D11;
+        padding: 1%;
+        height: auto;
+        border-radius: 4px;
     }
     .workBookDiv,
     .workLiriDiv {
         margin-right: 7vw;
     }
-    .hiddenProj,
-    .hiddenLiri,
-    .hiddenGif {
-        width: 0;
-        height: 0;
-    }
-    .workBookDiv:hover .hiddenLiri,
-    .workLiriDiv:hover .hiddenLiri,
-    .workProjDiv:hover .hiddenProj,
-    .workGifDiv:hover .hiddenGif {
-        width: 500px;
-        height: 282px;
+    .container3 {
+        min-height: 1800px;
     }
     /* ------------Contact--------- */
     .hello {
@@ -700,3 +678,18 @@ a:-webkit-any-link {
         font-size: 50px;
     }
 } 
+@media (min-width: 1500px) {
+    .container3 {
+        min-height: 2000px;
+    }
+}
+@media (min-width: 1700px) {
+    .container3 {
+        min-height: 2300px;
+    }
+}
+@media (min-width: 2000px) {
+    .container3 {
+        min-height: 2500px;
+    }
+}

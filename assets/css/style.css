@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #2C0E33;
+    background-color: #1E0826;
     min-height: 100%;
 }
 html { 
@@ -185,12 +185,6 @@ a:-webkit-any-link {
 }
 .techUsed {
     text-align: center;
-    background-color: #1E0826;
-    border-radius: 4px;
-}
-.projectTitle {
-    background-color: #1E0826;
-    border-radius: 4px;
 }
 .fab.fa-github,
 .fas.fa-eye {
@@ -276,7 +270,7 @@ a:-webkit-any-link {
         overflow: hidden;
     }
     .textForGig {
-        background-color: #1E0826;
+        background-color: hsl(0, 0%, 0%, .75);
         padding-right: 0;
         padding-left: 0;
         padding: 2%;

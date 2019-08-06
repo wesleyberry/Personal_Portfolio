@@ -612,6 +612,20 @@ a:-webkit-any-link {
     #myWork > div > div:nth-child(1) > img {
         padding-left: 0;
     }
+    #mixContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    #mixImage {
+        order: 2;
+        padding-right: 0;
+        left: 10px;
+        max-height: 300px;
+    }
+    #mixDescription {
+        order: 1;
+        flex-basis: 24.5% !important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -673,6 +687,20 @@ a:-webkit-any-link {
     #myWork > div > div:nth-child(1) > img {
         padding-right: 0;
         border-radius: 4px 0 0 4px;
+    }
+    #mixContainer {
+        justify-content: flex-start;
+    }
+    #mixImage {
+        padding-right: 0;
+        left: 0;
+        max-height: none;
+        border-radius: 0 4px 4px 0 !important;
+    }
+    #mixDescription {
+        order: 1;
+        flex-basis: 100% !important;
+        border-radius: 4px 0 0 4px !important;
     }
     /* ------------Contact--------- */
     .hello {

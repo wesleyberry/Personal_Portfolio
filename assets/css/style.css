@@ -257,6 +257,13 @@ a:-webkit-any-link {
 }
 .helloButton {
     font-size: 40px;
+    background: #32590A !important;
+    border-color: #32590A;
+    opacity: 1 !important;
+    color: rgb(207, 207, 207) !important;
+}
+.helloButton:hover {
+    color: rgb(17, 17, 17) !important;
 }
 /* ----------Footer------- */
 .footer1 {

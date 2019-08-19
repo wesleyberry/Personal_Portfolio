@@ -169,7 +169,7 @@ a:-webkit-any-link {
     margin-right: auto;
     width: 80%;
     margin-top: 5%;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 .aboutMeHeader {
     overflow: hidden;
@@ -217,15 +217,23 @@ a:-webkit-any-link {
 .emblems {
     font-size: 30px;
 }
+.anchorImage {
+    border-radius: 6px;
+}
+.textForGig {
+    border-radius: 6px;
+}
 .techUsed {
     text-align: center;
 }
+.fab.fa-linkedin-in,
 .fab.fa-github,
 .fas.fa-eye {
     color: rgb(207, 207, 207);
     transition: .4s;
     margin-bottom: 26px;
 }
+.fab.fa-linkedin-in:hover,
 .fab.fa-github:hover,
 .fas.fa-eye:hover {
     color: #588A0B;
@@ -272,25 +280,10 @@ div > div:nth-child(3) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8 {
     color: rgb(17, 17, 17) !important;
 }
 /* ----------Footer------- */
-.footer1 {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(17, 17, 17);
-    color: #2C3D11 !important;
-    text-align: center;
-    padding: 20px;
-}
-.footerP,
-.footerP2 {
-    color: #588A0B !important;
-    margin-bottom: 0;
-    font-size: 20px;
-    display: block;
-}
-.footerP2 {
-    letter-spacing: 40px;
-    font-size: 40px;
+footer {
+    height: 23vh;
+    background: black;
+    padding-top: 7%;
 }
 .fab.fa-linkedin.foot,
 .fab.fa-github-square.foot{
@@ -301,6 +294,18 @@ div > div:nth-child(3) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8 {
 .fab.fa-github-square.foot:hover {
     color: white;
     transition: .4s;
+}
+.footerEmblems {
+    text-align: center;
+}
+.mr-3 {
+    margin-right: 0;
+}
+.footer-copyright {
+    color: rgb(207, 207, 207);
+}
+body > footer > div.row{
+    margin: 0 0 0 0;
 }
 /*Extra small devices (phones) */
 @media (min-width: 300px) {
@@ -588,7 +593,7 @@ div > div:nth-child(3) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8 {
         font-size: 40px;
     }
     /* ----------Footer------- */
-    .footerP2 {
+    footer {
         display: none;
     }
     .contactContainer {

@@ -207,7 +207,7 @@ a:-webkit-any-link {
 }
 .projects {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .rowEmblems {
     display: flex;
@@ -230,6 +230,12 @@ a:-webkit-any-link {
 .fas.fa-eye:hover {
     color: #588A0B;
     transition: .4s;
+}
+div > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8, 
+div > div:nth-child(2) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8, 
+div > div:nth-child(3) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8 {
+    padding-right: 0;
+    padding-left: 0;
 }
 /* -----------Contact-------- */
 .contactContainer {
@@ -302,34 +308,32 @@ a:-webkit-any-link {
     .container2 {
         height: auto;
     }
-    .container3 {
-        min-height: 1800px;
-    }
     .row {
-        margin: 4% 0 4% 0;
+        margin: 5% 0 5% 0;
     }
     .gigBookImage {
+        width: 100%;
         height: auto;
         overflow: hidden;
+        transition: .4s;
+    }
+    .anchorImage {
+        display:inline-block;
+        overflow: hidden;
+    }
+    .gigBookImage:hover {
+        transform: scale(1.1);
+        transition: .4s;
     }
     .textForGig {
         background-color: hsl(0, 0%, 0%, .75);
         padding-right: 0;
         padding-left: 0;
         padding: 2%;
-        border-radius: 0 0 4px 4px;
     }
     #myWork > div > div.row > div {
         width: 92%;
         left: 4%;
-    }
-    .contactContainer {
-        position: static;
-    }
-}
-@media (min-width: 460px) {
-    .container3 {
-        min-height: 2000px;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -364,9 +368,6 @@ a:-webkit-any-link {
         padding-left: 8%;
         padding-right: 8%;
     }
-    .container3 {
-        min-height: 2100px;
-    }
     .forProfileImg {
         width: 60%;
         margin-top: 5%;
@@ -386,8 +387,6 @@ a:-webkit-any-link {
     .textForGig {
         padding: 2%;
         height: auto;
-        border-radius: 4px;
-        border-radius: 0 0 4px 4px;
     }
     #myWork > div > div:nth-child(3) > div,
     #myWork > div > div:nth-child(2) > div,
@@ -415,11 +414,6 @@ a:-webkit-any-link {
     .footerP,
     .footerP2 {
         font-size: 20px;
-    }
-}
-@media (min-width: 725px) {
-    .container3 {
-        min-height: 2200px;
     }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -578,7 +572,6 @@ a:-webkit-any-link {
     .textForGig {
         padding: 1%;
         height: auto;
-        border-radius: 0 0 4px 4px;
     }
     #myWork > div > div:nth-child(3) > div,
     #myWork > div > div:nth-child(2) > div,
@@ -603,12 +596,6 @@ a:-webkit-any-link {
         padding-right: 12%;
     }
 }
-@media (min-width: 830px) {
-    .container3 {
-        min-height: 2300px;
-    }
-}
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     /* --------Landing Page---------- */
@@ -622,9 +609,6 @@ a:-webkit-any-link {
     .container2 {
         padding-left: 12%;
         padding-right: 12%;
-    }
-    .container3 {
-        min-height: 1600px;
     }
     .forProfileImg {
         width: 240px;
@@ -645,7 +629,6 @@ a:-webkit-any-link {
     .textForGig {
         padding: 1%;
         height: auto;
-        border-radius: 4px;
     }
     #myWork > div > div:nth-child(3) > div,
     #myWork > div > div:nth-child(2) > div,
@@ -658,10 +641,6 @@ a:-webkit-any-link {
     #myWork > div > div:nth-child(1) > img {
         padding-left: 0;
     }
-    #mixContainer {
-        display: flex;
-        justify-content: space-between;
-    }
     #mixImage {
         order: 2;
         padding-right: 0;
@@ -671,6 +650,12 @@ a:-webkit-any-link {
     #mixDescription {
         order: 1;
         flex-basis: 24.5% !important;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
@@ -714,67 +699,22 @@ a:-webkit-any-link {
     .textForGig {
         padding: 1%;
         height: auto;
-        border-radius: 4px;
     }
     .workBookDiv,
     .workLiriDiv {
         margin-right: 7vw;
     }
-    .container3 {
-        min-height: 1400px;
-    }
-    #myWork > div > div:nth-child(3) > div,
-    #myWork > div > div:nth-child(2) > div,
-    #myWork > div > div:nth-child(1) > div {
-        border-radius: 0 4px 4px 0;
-    }
-    #myWork > div > div:nth-child(3) > img,
-    #myWork > div > div:nth-child(2) > img,
-    #myWork > div > div:nth-child(1) > img {
-        padding-right: 0;
-        border-radius: 4px 0 0 4px;
-    }
-    #mixContainer {
-        justify-content: flex-start;
-    }
     #mixImage {
         padding-right: 0;
         left: 0;
         max-height: none;
-        border-radius: 0 4px 4px 0 !important;
     }
     #mixDescription {
         order: 1;
         flex-basis: 100% !important;
-        border-radius: 4px 0 0 4px !important;
     }
     /* ------------Contact--------- */
     .helloButton {
         font-size: 50px;
     }
 } 
-@media (min-width: 1400px) {
-    .container3 {
-        min-height: 1500px;
-    }
-}
-@media (min-width: 1500px) {
-    .container3 {
-        min-height: 1700px;
-    }
-}
-@media (min-width: 1600px) {
-    .container3 {
-        min-height: 1900px;
-    }
-}
-@media (min-width: 1700px) {
-    .container3 {
-        min-height: 2200px;
-    }
-}
-@media (min-width: 2000px) {
-    .container3 {
-        min-height: 2500px;
-    }
-}

@@ -163,6 +163,9 @@ a:-webkit-any-link {
     background-color: #1F2614;
     opacity: .98;
 }
+.container2 {
+    min-height: 100vh;
+}
 .forProfileImg {
     display: block;
     margin-left: auto;

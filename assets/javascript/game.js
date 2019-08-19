@@ -17,15 +17,78 @@ $(".titleNav").on("click", function() {
     $(".fa-arrow-down").css("transition-duration", ".4s");
 });
 
+window.sr = ScrollReveal();
+sr.reveal('.titleH3', {
+    duration: 1000, 
+    origin: 'bottom',
+    distance: '500px',
+});
+sr.reveal('.titleName', {
+    duration: 1000,
+    delay: 250, 
+    origin: 'bottom',
+    distance: '500px'
+});
+sr.reveal('.titleProfession', {
+    duration: 1000, 
+    delay: 450,
+    origin: 'bottom',
+    distance: '500px'
+});
+sr.reveal('.scrollNav', {
+    duration: 1000, 
+    delay: 650,
+    origin: 'bottom',
+    distance: '500px'
+});
+sr.reveal('.social', {
+    duration: 1250,
+    delay: 650,
+    origin: 'left',
+    distance: '200px'
+});
+sr.reveal('.emailCont', {
+    duration: 1250,
+    delay: 650,
+    origin: 'right',
+    distance: '200px'
+});
 
-{/* <div class="footer1">
-<p class="footerP">Designed & Created by Wesley Berry</p>
-<p class="footerP2">
-    <a href="https://github.com/wesleyberry" target="_blank">
-        <i class="fab fa-github-square foot"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/wesley-berry-89742317a" target="_blank">
-        <i class="fab fa-linkedin foot"></i>
-    </a>
-</p>
-</div> */}
+sr.reveal('.aboutMeHeader', {
+    duration: 1000,
+    origin: 'top',
+    distance: '200px'
+});
+sr.reveal('.forProfileImg', {
+    duration: 1000,
+    origin: 'top',
+    distance: '200px'
+});
+sr.reveal('.aboutMeText', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '200px'
+});
+sr.reveal('.experience', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '200px'
+});
+
+
+sr.reveal('.anchorImage', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '200px'
+});
+sr.reveal('.textForGig', {
+    duration: 1000,
+    origin: 'top',
+    distance: '200px'
+});
+
+sr.reveal('.hello', {
+    duration: 1000,
+    origin: 'top',
+    distance: '200px'
+});

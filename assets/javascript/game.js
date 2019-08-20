@@ -83,7 +83,7 @@ sr.reveal('.anchorImage', {
 });
 sr.reveal('.textForGig', {
     duration: 1000,
-    origin: 'top',
+    origin: 'bottom',
     distance: '200px'
 });
 

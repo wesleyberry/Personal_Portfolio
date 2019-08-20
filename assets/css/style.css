@@ -343,6 +343,10 @@ body > footer > div.row{
         width: 92%;
         left: 4%;
     }
+    .center {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -664,6 +668,11 @@ body > footer > div.row{
         justify-content: center;
         margin-top: auto;
         margin-bottom: auto;
+        padding-right: 15px;
+    }
+    .center2 {
+        padding-left: 15px;
+        padding-right: 0;
     }
 }
 

@@ -92,3 +92,8 @@ sr.reveal('.hello', {
     origin: 'top',
     distance: '200px'
 });
+sr.reveal('.collaborate', {
+    duration: 1000,
+    origin: 'top',
+    distance: '200px'
+});

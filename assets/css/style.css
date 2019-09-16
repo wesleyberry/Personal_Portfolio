@@ -242,11 +242,10 @@ a:-webkit-any-link {
     color: #588A0B;
     transition: .4s;
 }
-div > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8, 
-div > div:nth-child(2) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8, 
-div > div:nth-child(3) > div.col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-8 {
+#myWork > div > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-8.col-xl-8.order-lg-2.center2,
+#myWork > div > div:nth-child(3) > div.col-xs-12.col-sm-12.col-md-12.col-lg-8.col-xl-8.order-lg-2.center2 {
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 15px;
 }
 /* -----------Contact-------- */
 .contactContainer {
@@ -339,11 +338,15 @@ body > footer > div.row{
         padding-left: 0;
         padding: 2%;
     }
-    #myWork > div > div.row > div {
+    /* #myWork > div > div.row > div {
         width: 92%;
         left: 4%;
-    }
+    } */
     .center {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .center2 {
         padding-left: 0;
         padding-right: 0;
     }
@@ -400,6 +403,7 @@ body > footer > div.row{
         padding: 2%;
         height: auto;
     }
+    #myWork > div > div:nth-child(4) > div,
     #myWork > div > div:nth-child(3) > div,
     #myWork > div > div:nth-child(2) > div,
     #myWork > div > div:nth-child(1) > div {
@@ -585,6 +589,7 @@ body > footer > div.row{
         padding: 1%;
         height: auto;
     }
+    #myWork > div > div:nth-child(4) > div,
     #myWork > div > div:nth-child(3) > div,
     #myWork > div > div:nth-child(2) > div,
     #myWork > div > div:nth-child(1) > div {
@@ -642,12 +647,14 @@ body > footer > div.row{
         padding: 1%;
         height: auto;
     }
+    #myWork > div > div:nth-child(4) > div,
     #myWork > div > div:nth-child(3) > div,
     #myWork > div > div:nth-child(2) > div,
     #myWork > div > div:nth-child(1) > div {
         flex: 0 0 100%;
         left: 0;
     }
+    #myWork > div > div:nth-child(4) > img,
     #myWork > div > div:nth-child(3) > img,
     #myWork > div > div:nth-child(2) > img,
     #myWork > div > div:nth-child(1) > img {
@@ -669,6 +676,7 @@ body > footer > div.row{
         margin-top: auto;
         margin-bottom: auto;
         padding-right: 15px;
+        padding-left: 0;
     }
     .center2 {
         padding-left: 15px;
